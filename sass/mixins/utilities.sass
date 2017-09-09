@@ -1,0 +1,163 @@
+/**
+** Mixins for positions
+** --------------------**/
+
+=positions($top: 0, $right: $top, $bottom: $top, $left: $top)
+  top: #{$top}
+  right: #{$right}
+  bottom: #{$bottom}
+  left: #{$left}
+
+=top-left($top: 0, $left: $top)
+  top: #{$top}
+  left: #{$left}
+
+=top-right($top: 0, $right: $top)
+  top: #{$top}
+  right: #{$right}
+
+=bottom-left($bottom: 0, $left: $bottom)
+  bottom: #{$bottom}
+  left: #{$left}
+
+=bottom-right($bottom: 0, $right: $bottom)
+  bottom: #{$bottom}
+  right: #{$right}
+
+/**
+ ** Mixins for sizes
+ ** ----------------**/
+
+=wrapper($wrapper-size: 1080px, $vertical-margin: 0)
+  width: 100%
+  max-width: $wrapper-size
+  margin: $vertical-margin auto
+
+=w-h($width: 0, $height: $width)
+  width: #{$width}
+  height: #{$height}
+
+=max-wh($width: none, $height: $width)
+  max-width: #{$width}
+  max-height: #{$height}
+
+=min-wh($width: none, $height: $width)
+  min-width: #{$width}
+  min-height: #{$height}
+
+
+/**
+ ** Mixins for colors
+ ** -----------------**/
+
+=color-and-hover($color, $color-hover: $color)
+  color: $color
+
+  &:hover,
+  &:focus
+    color: $color-hover
+
+=bg-color-and-hover($color, $color-hover: $color)
+  background-color: $color
+
+  &:hover,
+  &:focus
+    background-color: $color-hover
+
+=border-and-hover($color, $color-hover: $color, $border-width: 1px)
+  border: $border-width solid $color
+
+  &:hover,
+  &:focus
+    border: $border-width solid $color-hover
+
+
+/**
+ ** Mixins for flex display
+ ** -----------------------**/
+=build-flex-mixin($direction, $justify, $align)
+  display: flex
+  flex-direction: #{$direction}
+  justify-content: #{$justify}
+  align-items: #{$align}
+
+=flex-row-center
+  +build-flex-mixin("row", "center", "center")
+
+=flex-row-left
+  +build-flex-mixin("row", "flex-start", "center")
+
+=flex-row-left-stretch
+  +build-flex-mixin("row", "flex-start", "stretch")
+
+=flex-row-left-baseline
+  +build-flex-mixin("row", "flex-start", "baseline")
+
+=flex-row-right
+  +build-flex-mixin("row", "flex-end", "center")
+
+=flex-row-top
+  +build-flex-mixin("row", "center", "flex-start")
+
+=flex-row-bottom
+  +build-flex-mixin("row", "flex-start", "flex-end")
+
+=flex-row-bottom-center
+  +build-flex-mixin("row", "center", "flex-end")
+
+=flex-row-top-left
+  +build-flex-mixin("row", "flex-start", "flex-start")
+
+=flex-row-stretch
+  +build-flex-mixin("row", "center", "stretch")
+
+=flex-row-around
+  +build-flex-mixin("row", "space-around", "center")
+
+=flex-row-around-top
+  +build-flex-mixin("row", "space-around", "flex-start")
+
+=flex-row-between
+  +build-flex-mixin("row", "space-between", "center")
+
+=flex-row-between-stretch
+  +build-flex-mixin("row", "space-between", "stretch")
+
+=flex-row-between-start
+  +build-flex-mixin("row", "space-between", "flex-start")
+
+=flex-row-between-end
+  +build-flex-mixin("row", "space-between", "flex-end")
+
+=flex-row-reverse-left
+  +build-flex-mixin("row-reverse", "flex-end", "center")
+
+=flex-column-center
+  +build-flex-mixin("column", "center", "center")
+
+=flex-column-top
+  +build-flex-mixin("column", "flex-start", "center")
+
+=flex-column-bottom
+  +build-flex-mixin("column", "flex-end", "center")
+
+=flex-column-top-left
+  +build-flex-mixin("column", "flex-start", "flex-start")
+
+=flex-column-left
+  +build-flex-mixin("column", "center", "flex-start")
+
+=flex-column-right
+  +build-flex-mixin("column", "center", "flex-end")
+
+=flex-column-stretch
+  +build-flex-mixin("column", "center", "stretch")
+
+=flex-column-around
+  +build-flex-mixin("column", "space-around", "center")
+
+=flex-column-between
+  +build-flex-mixin("column", "space-between", "center")
+
+=flex-column-between-end
+  +build-flex-mixin("column", "space-between", "flex-end")
