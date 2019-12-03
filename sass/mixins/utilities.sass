@@ -1,6 +1,6 @@
 /**
-** Mixins for positions
-** --------------------**/
+ ** Mixins for positions
+ ** --------------------**/
 
 =positions($top: 0, $right: $top, $bottom: $top, $left: $top)
   top: #{$top}
@@ -23,6 +23,16 @@
 =bottom-right($bottom: 0, $right: $bottom)
   bottom: #{$bottom}
   right: #{$right}
+
+=pseudo
+  position: absolute
+  content: ''
+
+=grid-row($row-start, $row-end: $row-start + 1)
+  grid-row: #{$row-start} / #{$row-end}
+
+=grid-column($column-start, $column-end: $column-start + 1)
+  grid-column: #{$column-start} / #{$column-end}
 
 /**
  ** Mixins for sizes
@@ -71,6 +81,12 @@
   &:focus
     border: $border-width solid $color-hover
 
+=debug
+  *
+    background-color: rgba(255,0,0,.1)
+
+=tr($prop: 'all', $time: '.3s')
+  transition: #{ $prop } #{ $time } ease-in-out
 
 /**
  ** Mixins for flex display
@@ -161,3 +177,6 @@
 
 =flex-column-between-end
   +build-flex-mixin("column", "space-between", "flex-end")
+
+=flex-column-between-top
+  +build-flex-mixin("column", "space-between", "flex-start")
