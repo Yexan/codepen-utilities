@@ -1,0 +1,72 @@
+/* --------------------------------------------------------------- */
+/* == Typography                                                   */
+/* --------------------------------------------------------------- */
+
+h1, .h1-like {
+  // color: $h1-color;
+  // font-size: rem(36);
+  // font-weight: 400;
+  // font-style: italic;
+  // line-height: 1em;
+
+  // @media(max-width: 530px){ font-size: rem(30); }
+  color: $h1-color;
+  margin: 0;
+  padding: 0;
+  font-size: rem(24);
+  font-weight: 400;
+}
+
+h2, .h2-like {
+  // color: $h2-color;
+  // font-size: rem(24);
+  // font-weight: 400;
+  // font-style: normal;
+
+  // @media(max-width: 530px){ font-size: rem(20); }
+
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 150px;
+  text-align: center;
+  font-size: rem(36);
+  color: $h2-color;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+  @media(max-width: 570px){ margin-bottom: 80px; }
+  @media(max-width: 380px){ font-size: rem(32); }
+}
+
+h3, .h3-like {
+  color: $h3-color;
+  font-size: rem(22);
+  font-weight: 400;
+  font-style: normal;
+  margin-top: 0;
+
+  @media(max-width: 530px){ font-size: rem(18); }
+}
+
+h4, .h4-like {
+  color: $h4-color;
+  font-size: rem(18);
+  font-weight: 400;
+  margin: 0;
+}
+
+h5, .h5-like {
+  color: $h5-color;
+  font-size: rem(18);
+  font-weight: 600;
+}
+
+h6, .h6-like {
+  color: $h6-color;
+  font-size: rem(16);
+  font-weight: 600;
+}
+
+p, ul, li, em, span, article, section, div, input, button{
+  font-size: rem(16);
+}

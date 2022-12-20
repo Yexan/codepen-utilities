@@ -1,0 +1,66 @@
+/* --------------------------------------------------------------- */
+/* == Layout Lab                                                   */
+/* --------------------------------------------------------------- */
+
+/**
+  * Page Lab
+  * --------
+  */
+  #lab{
+    
+    @include full-header-color($white-0);
+
+    padding: 40px;
+
+    @media(max-width: 570px){ padding: 40px 15px; }
+
+    h2{
+      margin-bottom: 80px;
+    }
+
+    .experiment{
+    
+      padding: 0 0 15px 0;
+      margin: 60px 0 80px 0;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, .16),
+              0 3px 6px rgba(0, 0, 0, .23);
+
+      h3{
+        display: block;
+        background-color: $violet-fonce;
+        color: $white-0;
+        padding: 10px;
+      }
+
+      .content{
+        padding: 10px 35px;
+        position: relative;
+      }
+
+      .date{
+        background-color: $violet-clair;
+        color: $white-0;
+        position: absolute;
+        display: inline-block;
+        left: -4px;
+        top: 0;
+        padding: 3px 15px 3px 30px;
+      }
+
+      .description{
+        text-align: left;
+        margin: 75px 0 35px 0;
+
+        a{
+          color: $violet-clair;
+          text-decoration: underline;
+
+          &:hover{
+            color: $violet-fonce;
+          }
+        }
+      }
+
+    }
+
+}

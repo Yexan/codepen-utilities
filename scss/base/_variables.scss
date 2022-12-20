@@ -1,0 +1,171 @@
+/* ---------------------------------------------------------------- /
+*                             Variables
+* ---------------------------------------------------------------- */
+
+/*------------------------------------*\
+    == Colors
+\*------------------------------------*/
+
+$white                      : #fff;
+$black                      : #000;
+$blue-fb-button             : #3b5994;
+$blue-fb-button-shadow      : #374d83;
+$grey-soft                  : #eee;
+$grey-soft-darker           : darken($grey-soft, 25%);
+$grey-soft-darkest          : darken($grey-soft, 45%);
+
+
+
+
+$white-0                : #fff;
+$white-0--alpha-02      : rgba(255, 255, 255, 0.2);
+
+$black-0                : #000;
+$black-0--alpha-00      : rgba(0, 0, 0, 0);
+$black-0--alpha-05      : rgba(0, 0, 0, 0.5);
+
+$red-0                  : #ff0000;
+
+$green-0                : #00ff00;
+$green-1                : #00ba80;
+$green-2                : #009c6b;
+$green-3                : darken($green-2, 5%);
+
+
+$grey-1                 : #4a4b4e;
+$grey-2                 : #f4f4f4;
+$grey-2--60             : transparentize($grey-2, 0.6);
+$grey-3                 : darken($grey-2, 25%);
+
+
+$violet-clair:      #7f4584;
+$violet-fonce:      #663d75;
+$violet-dark:       darken($violet-fonce, 10%);
+$violet-darker:     darken($violet-fonce, 20%);
+$gris-fonce:        #444;
+$gris-moyen:        #777;
+$gris-dark:         darken($gris-fonce, 10%);
+$gris-darker:       darken($gris-fonce, 20%);
+$gris-moyen-dark:   darken($gris-moyen, 10%);
+$gris-moyen-darker: darken($gris-moyen, 20%);
+$gris-dark-soft:    darken($gris-dark, 5%);
+$gris-moyen-trans:  rgba($gris-moyen, 0.2);
+
+
+/*------------------------------------*\
+    == Config
+\*------------------------------------*/
+
+
+////////////////////////////////////////
+// Base
+//
+
+/**
+* base/_soft-reset
+*/
+$soft-reset-body-font-family  : Lato, "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$soft-reset-body-font-size    : rem(16);
+$soft-reset-body-line-height  : 1.625em;
+$soft-reset-body-color        : $gris-dark;
+$soft-reset-body-background   : $white-0;
+
+
+/**
+* base/_typography
+*/
+$h1-color                 : $white-0;
+$h2-color                 : $violet-clair;
+$h3-color                 : $violet-fonce;
+$h4-color                 : $violet-fonce;
+$h5-color                 : $violet-fonce;
+$h6-color                 : $violet-fonce;
+
+
+/**
+* base/_links
+*/
+$links-a-color            : $white-0;
+$links-a-color-hover      : $white-0;
+$link-link-color          : $white-0;
+$link-link-hover-color    : $white-0;
+
+
+////////////////////////////////////////
+// Modules
+//
+
+/**
+* module/_focus
+*/
+$focus-outline : $white-0;
+
+
+/**
+* module/_form
+*/
+$form-input-wrong-border          : $red-0;
+$form-input-good-border           : $green-0;
+$form-contact-message-test-color  : $red-0;
+$form-spinner-div-background      : $green-1;
+
+
+/**
+* module/_button
+*/
+$button-color                       : $violet-fonce;
+$button-color-hover                 : $violet-clair;
+$button-btn-color                   : $white-0;
+$button-btn-background              : $violet-fonce;
+$button-btn-border                  : $violet-fonce;
+$button-btn-text-shadow             : $violet-darker;
+$button-btn-box-shadow              : $violet-darker;
+$button-btn-hover-background        : $violet-clair;
+$button-btn-hover-border            : $violet-clair;
+$button-btn-outline-color           : $violet-fonce;
+$button-btn-outline-background      : $black-0--alpha-00;
+$button-btn-outline-border          : $violet-fonce;
+$button-btn-outline-hover-color     : $violet-clair;
+$button-btn-outline-hover-border    : $violet-clair;
+$button-btn-outline-2-color         : $violet-fonce;
+$button-btn-outline-2-background    : $black-0--alpha-00;
+$button-btn-outline-2-border        : $violet-fonce;
+$button-btn-outline-2-hover-color   : $violet-clair;
+$button-btn-outline-2-hover-border  : $violet-clair;
+
+
+/**
+* module/_info-box
+*/
+$info-box-info-box-background       : $grey-2;
+$info-box-info-box-border           : $grey-1;
+
+
+/**
+* module/_input-file
+*/
+$input-file-btn-file-input-type-file-background         : $green-1;
+$input-file-input-group-input-type-text-background      : $grey-2--60;
+$input-file-input-group-btn-secondary-border            : $green-2;
+$input-file-input-group-btn-secondary-background        : transparent;
+$input-file-input-group-btn-secondary-color             : $green-2;
+$input-file-input-group-btn-secondary-hover-background  : $green-2;
+$input-file-input-group-btn-secondary-hover-color       : $green-1;
+$input-file-780-input-group-input-type-text-border      : $grey-1; 
+
+
+/**
+* module/_top-header
+*/
+$top-header-color         : $white-0;
+$top-header-box-shadow    : $black-0--alpha-05;
+
+
+
+////////////////////////////////////////
+// Layout
+//
+
+/**
+* layout/_
+*/

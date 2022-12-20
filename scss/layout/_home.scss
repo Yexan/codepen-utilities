@@ -1,0 +1,126 @@
+/* --------------------------------------------------------------- */
+/* == Layout home                                                  */
+/* --------------------------------------------------------------- */
+
+
+/*------------------------------------*\
+  == Home > Left Pannel
+\*------------------------------------*/
+
+/**
+* => scss/layout/_left-pannel.scss
+*/
+
+
+
+/*------------------------------------*\
+  == Home > Main Pannel
+\*------------------------------------*/
+
+#main-pannel{
+  margin: 0 0 0 340px;
+
+  @media (max-width: 900px) {
+    margin: 0;
+  }
+
+  /**
+  * Introduction
+  * ------------
+  */
+  #intro{
+
+    @include full-header('bg-intro.png');
+
+    padding: 40px;
+
+    @media(max-width: 570px){ padding: 40px 15px; }
+    
+    .intro--main{
+
+      .actual{
+        background-color: $white-0--alpha-02;
+        margin-top: 120px;
+        padding: 20px;
+        margin-bottom: 60px;
+
+        .cell + .cell{
+          padding: 0 0 0 25px;
+          text-align: left;
+        }
+        @media(max-width: 570px){
+          margin-top: 0;
+          .cell{ display: block; }
+          .cell + .cell{ padding: 0; }
+        }
+      }
+
+    } // .intro--main
+  } // #intro
+  
+
+
+  /**
+  * A propos
+  * --------
+  */
+  #a-propos{
+    
+    @include full-header-color($white-0);
+
+    padding: 40px;
+
+    @media(max-width: 570px){ padding: 40px 15px; }
+
+    p{
+      text-align: left;
+      font-size: rem(24);
+      line-height: 35px;
+
+      @media(max-width: 900px){ font-size: rem(20); }
+      @media(max-width: 480px){ font-size: rem(18); }
+      @media(max-width: 345px){ font-size: rem(16); }
+
+      strong{
+        color: $violet-dark;
+      }
+    }
+  }
+  
+
+  /**
+  * Contact
+  * -------
+  */
+  #contact{
+
+    @include full-header-color($gris-moyen-trans);
+
+    padding: 40px;
+
+    @media(max-width: 570px){ padding: 40px 15px; }
+
+    .email{
+      display: table;
+      margin:0 auto 90px auto;
+      border-radius: 35px;
+      width: 70px;
+      height: 70px;
+
+      i{
+        display: table-cell;
+        vertical-align: middle;
+        font-size: rem(30);
+      }
+    }
+
+  }
+
+
+  /**
+  * Footer
+  * ------
+  * => scss/layout/_footer.scss
+  */
+
+}

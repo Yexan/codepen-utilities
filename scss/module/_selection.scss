@@ -1,0 +1,13 @@
+/* --------------------------------------------------------------- */
+/* == Module selection                                             */
+/* --------------------------------------------------------------- */
+
+
+*::-moz-selection { /* Pour firefox */
+background:#ddd;
+color:rgba(127, 69, 132, .9);
+}
+*::selection { /* Pour les autres */
+background: #ddd;
+color:rgba(127, 69, 132, .9);
+}

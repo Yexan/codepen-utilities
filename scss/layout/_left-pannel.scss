@@ -1,0 +1,129 @@
+/* --------------------------------------------------- /
+*                       Left pannel
+* --------------------------------------------------- */
+
+#left-pannel{
+  position: fixed;
+  background: $gris-dark;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  width: 340px;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  header{
+    background-color: $gris-darker;
+    height: 83px;
+    text-align: center;
+
+    figure{ margin: 0; }
+  }
+
+  .profil-content{
+    padding: 45px;
+  }
+
+  .profil{
+    position: relative;
+    text-align: right;
+
+    figure{
+      position: absolute;
+      left:0;
+      top:0;
+      margin: 0;
+      width: 54px;
+      height: 54px;
+    }
+    p{
+      color: $gris-moyen;
+      margin: 0;
+      font-weight: 300;
+    }
+  } // .profil
+
+  nav{
+    position: relative;
+
+    li{
+      text-align: right;
+
+      a{
+        padding: 15px 45px;
+        display: block;
+        text-decoration: none;
+        color: $gris-moyen;
+        background-color: transparent;
+        font-weight: 400;
+
+        i{
+          position: absolute;
+          left:45px;
+          margin: 0;
+          font-size: rem(22);
+          color: $gris-moyen;
+        }
+
+        &:hover, &.active{
+          background-color: $violet-fonce;
+          transition: all .4s ease-in-out;
+          color: $white-0;
+          font-weight: 600;
+
+          i{
+            color: $white-0;
+            transition: all .4s ease-in-out;
+          }
+        }
+        &.active{
+          transition: all 0s ease-in-out;
+          
+          i{ transition: all 0s ease-in-out; }
+        }
+      } // a
+    }// li
+  } // nav
+
+  .follow{
+    margin-top: 25px;
+    padding: 20px 45px;
+    color: $gris-moyen;
+    font-weight: 300;
+    border-top:     1px solid $gris-moyen-trans;
+    border-bottom:  1px solid $gris-moyen-trans;
+
+    p{
+      margin: 0;
+    }
+
+    ul{
+      margin: 15px 0 0 0;
+    }
+
+    li{
+      display: inline-block;
+      padding: 0 15px;
+
+      a{
+        color: $gris-moyen;
+
+        span{
+          font-size: rem(30);
+
+          &:hover{
+            color: $violet-clair;
+            transition: all .4s ease-in-out;
+          }
+        }     
+      } // a
+    } // li
+  } // .follow
+
+} // #left-pannel
